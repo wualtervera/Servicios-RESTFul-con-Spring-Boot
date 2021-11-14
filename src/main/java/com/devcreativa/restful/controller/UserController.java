@@ -1,7 +1,5 @@
 package com.devcreativa.restful.controller;
 
-import javax.annotation.security.DenyAll;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +16,6 @@ public class UserController {
 	@Autowired
 	public UserService userService;
 	
-	@DenyAll
 	@GetMapping("")
 	public ResponseEntity<?> getAll(){
 		try {
